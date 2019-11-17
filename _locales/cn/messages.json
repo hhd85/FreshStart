@@ -1,0 +1,204 @@
+{
+   "cancel": {
+      "message": "Cancel"
+   },
+   "clickToRestore": {
+      "message": "Click to restore session '$name$' in new window",
+      "placeholders": {
+         "name": {
+            "content": "$1"
+         }
+      }
+   },
+   "confirm": {
+      "message": "Confirm"
+   },
+   "confirmClose": {
+      "message": "Open this session and close current window(s)? (Cannot undo!)"
+   },
+   "confirmDeleteQuestion": {
+      "message": "Are you sure you want to remove this session?"
+   },
+   "contactUs": {
+      "message": "Contact us:"
+   },
+   "crashRestoreTitle": {
+      "message": "Restore Previous Session"
+   },
+   "description": {
+      "description": "扩展说明",
+      "message": "临时书签管理插件！当查阅资料时打开多个网页，需要零时保存便于稍后阅读！"
+   },
+   "edit": {
+      "message": "编辑"
+   },
+   "emptySession": {
+      "message": "没有选择任何页面"
+   },
+   "enableCrashRecovery": {
+      "message": "启用崩溃恢复"
+   },
+   "enterSessionName": {
+      "message": "请输入临时保存名称"
+   },
+   "export": {
+      "message": "Export"
+   },
+   "exportedSessionCopyTips": {
+      "message": "Ctrl+c or Cmd+c to copy your session"
+   },
+   "importedSessionTips": {
+      "message": "Paste your session here"
+   },
+   "minutes": {
+      "message": "minutes.\u003Cbr>Recommended: 5 minutes. Auto-saving too\u003Cbr> frequently may slow down your machine."
+   },
+   "mySession": {
+      "message": "My Session"
+   },
+   "name": {
+      "description": "The extension name",
+      "message": "FreshStart - Cross Browser Session Manager"
+   },
+   "noSessionSaved": {
+      "message": "No sessions saved"
+   },
+   "noSessionToRestore": {
+      "message": "There are no saved sessions."
+   },
+   "options": {
+      "message": "Options"
+   },
+   "optionsBackupPeriod": {
+      "message": "Saves all your windows and tabs every "
+   },
+   "optionsBackupPeriodOutOfRange": {
+      "message": "Backup period cannot be shorter than 1 minute or larger than 999 minutes"
+   },
+   "optionsDateFormat": {
+      "message": "Date format:"
+   },
+   "optionsEnableCrashRecovery": {
+      "message": "Enable Crash Recovery"
+   },
+   "optionsNewUserTips": {
+      "message": "New to FreshStart? Visit our \u003Ca href='http://blog.visibotech.com/search/label/FreshStart' target='_blank'>Welcome Page\u003C/a>!"
+   },
+   "optionsPageTitle": {
+      "message": "FreshStart Options"
+   },
+   "optionsReorder": {
+      "message": "Move session to top after edit"
+   },
+   "optionsSaved": {
+      "message": "Options saved"
+   },
+   "popupSizeLabel": {
+      "message": "Popup Size"
+   },
+   "remove": {
+      "message": "Remove"
+   },
+   "restorePreviousSession": {
+      "message": "Restore previous session"
+   },
+   "restoreSession": {
+      "message": "Restore Session"
+   },
+   "restoreSession2": {
+      "message": "Click to open session in new window"
+   },
+   "restoreSessionButton": {
+      "message": "Restore this window"
+   },
+   "restoreSessionButtonDescription": {
+      "message": "Click to restore this window"
+   },
+   "restoreSessionOn": {
+      "message": "Restore session on "
+   },
+   "save": {
+      "message": "Save"
+   },
+   "saveFail": {
+      "message": "Fail to save session. Please try again later"
+   },
+   "saveSession": {
+      "message": "Save Session"
+   },
+   "saveSessionButton": {
+      "message": "Save as FreshStart session"
+   },
+   "saveSessionButtonDescription": {
+      "message": "Click here to save this as a new FreshStart session"
+   },
+   "savedWindow": {
+      "message": "Saved Window ($count$)",
+      "placeholders": {
+         "count": {
+            "content": "$1"
+         }
+      }
+   },
+   "selectAll": {
+      "message": "Select All"
+   },
+   "sessionCreated": {
+      "message": "$name$ created",
+      "placeholders": {
+         "name": {
+            "content": "$1"
+         }
+      }
+   },
+   "sessionTextBoxClose": {
+      "message": "Close"
+   },
+   "sessionTextBoxImport": {
+      "message": "Import session"
+   },
+   "sizeWarning": {
+      "message": "* If the size is too small, it may distort the layout."
+   },
+   "smEditCancel": {
+      "message": "Cancel"
+   },
+   "smEditSave": {
+      "message": "Save"
+   },
+   "smHeadingNew": {
+      "message": "Tabs/Windows to Add"
+   },
+   "smHeadingNewTitle": {
+      "message": "You can drag and drop tabs between windows"
+   },
+   "smHeadingSaved": {
+      "message": "Saved Session (uncheck to remove)"
+   },
+   "smHeadingTitle": {
+      "message": "Title"
+   },
+   "smSaveList": {
+      "message": "Uncheck tabs that you don't want to be saved."
+   },
+   "smSaveToggle": {
+      "message": "Toggle Selection"
+   },
+   "snapshotHint": {
+      "message": "* 'Snapshot #1' up to 'Snapshot #5' are sessions that are saved in an earlier Chrome use. You may find them helpful if the most recent session is corrupted or is not exactly what you want."
+   },
+   "supportUs": {
+      "message": "Support our development and\u003Cbr>share to your friends!"
+   },
+   "tabsCount": {
+      "message": " ($count$ tabs)",
+      "placeholders": {
+         "count": {
+            "content": "$1"
+         }
+      }
+   },
+   "updatedMessage": {
+      "message": "FreshStart is updated, click here to see what's new"
+   }
+}

@@ -1,0 +1,25 @@
+{
+   "background": {
+      "scripts": [ "v161/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "img/freshstart_icon.png",
+      "default_popup": "v161/popup.html",
+      "default_title": "临时书签FreshStart"
+   },
+   "default_locale": "en",
+   "description": "__MSG_description__",
+   "icons": {
+      "16": "img/freshstart_icon.png",
+      "32": "img/freshstart32.png",
+      "48": "img/freshstart48.png"
+   },
+   "key": "XIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyIFEyuNhs2DNvPAHWZRjMTlsZdgrR5rufOnfEOHD5SKkqv1dE2hZUNncrqdYvJrf9KtBYeJp4FUEXS5iTxx51VbWxsg9PvOcz/w16GlY/79EmXNd8mSI+niRblYSW+zBtG8QTs21WlA79NTNwYgF792gyij6OhQvt0g4hDRmrYVhtTxMeuSywXvFFVfcv0MAHxcB6mD3Nf8dW/endu6VrzK+XCLvO9h8M+gYCAW3U99dRbgSHVmONJIoeR8gehuVocSYQ5BGemfOX86dH+Je/VjZbdxMPRxDIDQJEOPh8wxfHZrftd3qnSF52EvZO4byGNLi1mJPJVsIF/4iv8Y5CwIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "18",
+   "name": "__MSG_name__",
+   "options_page": "v161/options.html",
+   "permissions": [ "tabs", "bookmarks", "storage", "unlimitedStorage" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.6.1"
+}

@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title id="title">FreshStart Options</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+        <link rel="stylesheet" rel="text/css" href="options.css"/>
+        <link href="https://plus.google.com/104470168490743748748/" rel="publisher" />
+        <style type="text/css">
+            body {
+                background: -webkit-gradient(linear, left top, left bottom,
+                    from(#fff), to(#dcd));
+            }
+            #pagetitle {
+                color: black;
+            }
+            #feature {
+                background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#888));
+                color: white;
+            }
+            #options-saved {
+                margin-left: 5px;
+                display: none;
+            }
+
+            #optionsBackupPeriodWrapper {
+                margin-left: 25px;
+            }
+
+            #optionsNewUserTips a, .link a{
+                color: #ddd;
+            }
+            #optionsNewUserTips a:hover, .link a:hover {
+                color: #bbb;
+            }
+        </style>
+        <script type="text/javascript" src="options.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <div id="logo"></div>
+                <div id="pagetitle">FreshStart Options</div>
+            </div>
+
+            <br style="clear:both">
+
+            <div id="feature">
+                <div style="float: right; height: 150px; margin: -5px; padding: 5px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border: 1px solid #ddd; background: -moz-linear-gradient(top, rgba(255,255,255,0.05), rgba(255,255,255,0.2)); background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.05)), to(rgba(255,255,255,0.2))); -moz-box-shadow: 0px 0px 2px black; -webkit-box-shadow: 0px 0px 2px black;">
+                    <div style="position: relative; z-index:3; ">
+                        <div style="color: white; font: 16px Tahoma, Arial, sans-serif; line-height: 25px; margin-left: 5px;" id="supportUs">
+                            Support our development and<br/>share to your friends!
+                        </div>
+                        <div style="margin-top:10px;">
+                            <a href="https://plus.google.com/104470168490743748748/?prsrc=3" style="cursor:pointer;display:inline-block;text-decoration:none;color:#fff;font:13px/16px arial,sans-serif;"><span style="display:inline-block;font-weight:bold;vertical-align:top;margin-right:5px;margin-top:8px;">Join us</span><span style="display:inline-block;vertical-align:top;margin-right:15px;margin-top:8px;">on</span><img src="https://ssl.gstatic.com/images/icons/gplus-32.png" alt="" style="border:0;width:32px;height:32px;"/></a>
+
+                            <a href="http://twitter.com/home?status=I%20am%20using%20FreshStart%20-%20A%20Chrome%20Cross-Browser%20Session%20manager.%20Check%20it%20out!%20http%3A%2F%2Fbit.ly%2F9hJS4g" target="_blank"><img src="/img/twitter.png" style="border: 0"></a>                            
+                        </div>
+                    </div>
+                    <img src="/img/arrow.png" style="position: relative; left: 250px; top: -210px; z-index: 5">
+                </div>
+
+                <span id="optionsNewUserTips">New to FreshStart? Visit our <a href='http://blog.visibotech.com/search/label/FreshStart' target='_blank'>Welcome Page</a>!</span><br/><br/>
+                <input type="checkbox" id="crashRestore">
+                <span id="optionsEnableCrashRecovery">Enable Crash Recovery</span>
+                <span class="link">*<a href="http://blog.visibotech.com/2012/12/freshstart-16-is-released.html">How to use</a><br/></span>
+                <div id="optionsBackupPeriodWrapper">
+                    <span id="optionsBackupPeriod">Saves all your windows and tabs every </span> <input id="backupPeriod" maxlength="3" style="width: 50px;"> <span id="stringMinutes">minutes.<br/>Recommended: 5 minutes. Auto-saving too<br/> frequently may slow down your machine.</span>
+                </div>
+                <br/>
+                <span id="optionsDateFormat">Date format:</span>
+                <select id="dateFormatSelect" name="dateFormat" size="1">
+                    <option selected="selected" value="1">dd/mm/yyyy</option>
+                    <option value="2">mm/dd/yyyy</option>
+                    <option value="3">yyyy-mm-dd</option>
+                </select>
+                <br/>
+                <br/>
+                <span id="optionsReorder">Move session to top after edit</span>:
+                <input id="editOrder" type="checkbox" checked>
+                <br/>
+                <br/>
+                <span id="optionsPopupSize">Popup Size:</span>
+                <input name="popupSizeSelect" type="radio" value="1" checked>Normal(100%)
+                <input name="popupSizeSelect" type="radio" value="0.9">Small(90%)
+                <input name="popupSizeSelect" type="radio" value="custom">Custom
+                <input type="text" id="customPopupSize" size="5" value="80">%
+                <div id="sizeWarning" style="font-size:smaller">* If the size is too small, it may distort the layout.</div>
+                <br/>
+                <br/>
+                <button id="saveBtn"><span id="stringSave">Save</span></button>
+                <span id="options-saved">Options saved</span>
+                <br/><br/>
+                <!--div id="middleClickTips">Tips: FreshStart restores your sessions in new windows by default. To open a session in the current window, use ctrl-click (on Windows, Linux) or cmd-click (on Mac).</div-->
+            </div>
+
+            <!--div>
+                <br/>
+                <h3><span id="contactUs">Contact us:</span></h3>
+                <ul>
+                    <li><span id="contactUs2">Suggestions? Praise? Love? Visit us <a href='http://getsatisfaction.com/visibo/products/visibo_freshstart_session_manager' target='_blank'>here</a>!</span></li>
+                    <li><span id="contactUs3">Problems? Bugs? Visit us <a href='http://getsatisfaction.com/visibo/products/visibo_freshstart_session_manager' target='_blank'>here</a> as well. We often need screenshots and your OS/Chrome version.</span></li>
+                    <li><span id="contactUs4">We welcome all constructive feedbacks in civilized languages. *wink*</span></li>
+                </ul>
+            </div>
+
+            <div id="copyright"><a href='http://www.visibotech.com/' target='_blank'>Home</a> | <a href='http://blog.visibotech.com/' target='_blank'>Blog</a> | <a href='http://twitter.com/visibo' target='_blank'>Twitter</a> | Copyright 2011 Visibo Ltd. All rights reserved.</div-->
+
+            <br><br>
+            <div>
+                Bug report or suggestions? Go to this <a href="https://chrome.google.com/webstore/support/nmidkjogcjnnlfimjcedenagjfacpobb">public support page</a> or <a href="mailto:contactus@visibotech.com">email us</a>
+                <div id="copyright">
+                    Version 1.6.1 | <a href='http://www.visibotech.com/'>Home</a> | <a href='http://blog.visibotech.com/'>Blog</a> | Copyright © 2009 Visibo Ltd. All rights reserved.
+                </div>
+            </div>
+    </body>
+</html>
+

@@ -1,0 +1,202 @@
+{
+    "cancel": {
+        "message": "Cancel"
+    },
+    "clickToRestore": {
+        "message": "Klik hier om Sessie '$name$' te herstellen in een nieuw window",
+        "placeholders": {
+            "name": {
+                "content": "$1"
+            }
+        }
+    },
+    "confirm": {
+        "message": "Confirm"
+    },
+    "confirmClose": {
+        "message": "Open this session and close current window(s)? (Cannot undo!)"
+    },
+    "confirmDeleteQuestion": {
+        "message": "Are you sure to remove this sessions?"
+    },
+    "contactUs": {
+        "message": "Neem contact met ons op:"
+    },
+    "crashRestoreTitle": {
+        "message": "Herstel vorige Sessie"
+    },
+    "description": {
+        "message": "Kunt u wel een simpele Sessie manager gebruiken? Heeft u meerdere gebruikers op Chrome? Dan is FreshStart de oplossingen, de simpele Sessie manager."
+    },
+    "edit": {
+        "message": "Bewerk"
+    },
+    "emptySession": {
+        "message": "No window is selected in this session"
+    },
+    "enableCrashRecovery": {
+        "message": "Zet Crash Herstellen aan."
+    },
+    "enterSessionName": {
+        "message": "Please enter the name of the session"
+    },
+    "export": {
+        "message": "Export"
+    },
+    "exportedSessionCopyTips": {
+        "message": "Ctrl+c or Cmd+c to copy your session"
+    },
+    "importedSessionTips": {
+        "message": "Paste your session here"
+    },
+    "minutes": {
+        "message": "minutes.<br>Recommended: 5 minutes. Auto-saving too<br> frequently may slow down your machine."
+    },
+    "mySession": {
+        "message": "Mijn Sessie"
+    },
+    "name": {
+        "message": "FreshStart - Meerdere Browsers Sessie Manager"
+    },
+    "noSessionSaved": {
+        "message": "Geen Sessies Opgeslagen"
+    },
+    "noSessionToRestore": {
+        "message": "There are no saved sessions."
+    },
+    "options": {
+        "message": "Opties"
+    },
+    "optionsBackupPeriod": {
+        "message": "Sla alle windows en tabs op elke "
+    },
+    "optionsBackupPeriodOutOfRange": {
+        "message": "De back-up periode kan niet korter zijn dan 1 minuut of langer 999 minuten"
+    },
+    "optionsDateFormat": {
+        "message": "Date format:"
+    },
+    "optionsEnableCrashRecovery": {
+        "message": "Zet Crash Herstellen aan"
+    },
+    "optionsNewUserTips": {
+        "message": "Nieuw met FreshStart? Bezoek dan onze website <a href='http://blog.visibotech.com/search/label/FreshStart' target='_blank'>Welcome Page</a>!"
+    },
+    "optionsPageTitle": {
+        "message": "FreshStart Opties"
+    },
+    "optionsReorder": {
+        "message": "Move session to top after edit"
+    },
+    "optionsSaved": {
+        "message": "Uw Opties zijn opgeslagen"
+    },
+    "popupSizeLabel": {
+        "message": "Popup Size"
+    },
+    "remove": {
+        "message": "Verwijder"
+    },
+    "restorePreviousSession": {
+        "message": "Herstel laatste Sessie"
+    },
+    "restoreSession": {
+        "message": "Sessie Herstellen"
+    },
+    "restoreSession2": {
+        "message": "Klik om te openen in nieuwe window, ctrl-click (Win, Linux) of cmd-click (Mac) om te openen in huidige window."
+    },
+    "restoreSessionButton": {
+        "message": "Restore this window"
+    },
+    "restoreSessionButtonDescription": {
+        "message": "Click to restore this window"
+    },
+    "restoreSessionOn": {
+        "message": "Restore session on "
+    },
+    "save": {
+        "message": "Opslaan"
+    },
+    "saveFail": {
+        "message": "Fail to save session. Please try again later"
+    },
+    "saveSession": {
+        "message": "Sessie Opslaan"
+    },
+    "saveSessionButton": {
+        "message": "Save as FreshStart session"
+    },
+    "saveSessionButtonDescription": {
+        "message": "Click here to save this as a new FreshStart session"
+    },
+    "savedWindow": {
+        "message": "Saved Window ($count$)",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "selectAll": {
+        "message": "Select All"
+    },
+    "sessionCreated": {
+        "message": "$name$ created",
+        "placeholders": {
+            "name": {
+                "content": "$1"
+            }
+        }
+    },
+    "sessionTextBoxClose": {
+        "message": "Close"
+    },
+    "sessionTextBoxImport": {
+        "message": "Import session"
+    },
+    "sizeWarning": {
+        "message": "* If the size is too small, it may distort the layout."
+    },
+    "smEditCancel": {
+        "message": "Cancel"
+    },
+    "smEditSave": {
+        "message": "Opslaan"
+    },
+    "smHeadingNew": {
+        "message": "Tabbladen toevoegen (vink aan om toe tevoegen)"
+    },
+    "smHeadingNewTitle": {
+        "message": "You can drag and drop tabs between windows"
+    },
+    "smHeadingSaved": {
+        "message": "Opgeslagen Tabbladden (Deselecteer om te verwijderen)"
+    },
+    "smHeadingTitle": {
+        "message": "Titel"
+    },
+    "smSaveList": {
+        "message": "Deselecteer de Tabs die je niet wilt opslaan."
+    },
+    "smSaveToggle": {
+        "message": "Wissel Selectie"
+    },
+    "snapshotHint": {
+        "message": "* 'Snapshot #1' up to 'Snapshot #5' are sessions that are saved in an earlier Chrome use. You may find them helpful if the most recent session is corrupted or is not exactly what you want."
+    },
+    "supportUs": {
+        "message": "Ondersteun onze ontwikkeling en <br> vertel het je vrienden!"
+    },
+    "tabsCount": {
+        "message": " ($count$ tabs)",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "updatedMessage": {
+        "message": "FreshStart is bijgewerk, klik hier op te zien wat er nieuw is"
+    }
+}

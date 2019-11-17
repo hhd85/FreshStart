@@ -1,0 +1,580 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    width:700px;
+    height: 480px;
+    overflow: hidden;
+}
+/* Update notice */
+
+#updateNotifier {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 380px;
+    margin: 0px;
+    padding: 4px 2px 6px 2px;
+
+    background: rgba(255, 255, 255, 0.9);
+    -webkit-box-shadow: 0px 0px 8px black;
+
+    color: black;
+    font: bold 12px Verdana, Arial, Tahoma;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+
+    z-index: 9999;
+    display:none;
+}
+
+#updateNotifier:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffd), to(#eec));
+    color: #03f;
+}
+
+/* Layout */
+
+#smbase {
+    width:700px;
+    height:480px;
+    padding:0px;
+    margin:0px;
+    position:relative;
+}
+
+#smsavebase {
+    left:0px;
+    top:0px;
+    -webkit-user-select:none;
+    user-select: none;
+}
+
+#smrestorebase {
+    left:351px;
+    top:0px;
+    -webkit-user-select:none;
+    user-select: none;
+}
+
+#smsavebase, #smrestorebase {
+    display:block;
+    position:absolute;
+    border: 1px solid #777;
+    width:346px;
+    padding: 1px;
+    margin:0px;
+    height:476px;
+    -webkit-border-radius: 5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#bbb), to(#999));
+}
+/* Save session panel */
+
+#smsaveicon {
+    position:absolute;
+    top:10px;
+    left:12px;
+    width:48px;
+    height:48px;
+    background:url(/img/freshstart_save.png);
+}
+#smsavelabel {
+    position:absolute;
+    top:9px;
+    left:70px;
+    width:300px;
+    height:18px;
+    line-height:18px;
+    font: bold 18px Verdana, Arial, Tahoma, sans-serif;
+    color:#FFFFFF;
+    overflow:hidden;
+}
+#smsavetitle {
+    position:absolute;
+    top:30px;
+    left:70px;
+    width:150px;
+    height:18px;
+}
+#smsavebutton {
+    position:absolute;
+    top:31px;
+    right:30px;
+    width:80px;
+    height:24px;
+    background:url(/img/freshstart_savebutton.png);
+}
+#smsavetoggle {
+    vertical-align: center;
+}
+
+/* Save session list */
+
+#smsavelistDiv {
+    position: relative;
+    margin: 4px;
+    width: 94%;
+    height:390px;
+    padding:5px;
+
+    background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ddd));
+    border:1px solid #779;
+    -webkit-border-radius: 3px;
+
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+#smsavelistDiv H4{
+    color: #005;
+    margin:  5px 5px 3px 0px;
+    background-color: activecaption;
+    height: 20px;
+}
+
+.smtabline, .smwinline {
+    width: 370px;
+    height: 20px;
+    cursor:pointer;
+}
+.smcheck {
+    float: left;
+}
+
+.smcheck {
+    float: left;
+    margin-left: 15px;
+}
+
+.smwincheck {
+    float: left;
+}
+
+.smWinblabel, .smtablabel {
+    float: left;
+    /*max-width: 330px;*/
+    width:75%;    
+    height:15px;
+    font:12px Verdana, Arial, Tahoma, sans-serif;
+    color:#333;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-left: 5px;
+}
+.smWinblabel{
+    font-weight: bold;
+}
+
+/* Restore session panel */
+
+#smrestoreicon {
+    position:absolute;
+    top:10px;
+    left:12px;
+    width:48px;
+    height:48px;
+    background:url(/img/freshstart_restore.png);
+}
+
+#smrestorelabel {
+    position:absolute;
+    top:8px;
+    left:70px;
+    
+    height:18px;
+    line-height:18px;
+    font-size:18px;
+    font-weight:bold;
+    font-family:Verdana, Arial, Tahoma;
+    color:#FFFFFF;
+    overflow:hidden;
+}
+#smrestorelabel2 {
+    position:absolute;
+    top:26px;
+    left:70px;    
+    height:28px;
+    line-height:14px;
+    font-size:12px !important; /* some user said it is clipped, font size problem? */
+    font-family:Verdana, Arial, Tahoma;
+    color:#FFFFFF;
+    
+}
+#smrestoretopbar {
+    position:absolute;
+    top:50px;
+    left:5px;
+    overflow:hidden;
+}
+.restoretopbarbtn {
+    display:inline-block;
+    position:relative;
+    padding: 2px 8px 2px 8px;
+
+    border: 1px solid rgba(0,0,0,0.33);
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    margin: 10px 0px;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;    
+    color: #666;
+    text-align: center;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#cccccc),to(#aaaaaa));
+    
+    -webkit-box-shadow: inset 0 4px 4px rgba(255,255,255,0.25);
+    -moz-box-shadow: inset 0 4px 4px rgba(255,255,255,0.25);
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.33);
+    font-family: Verdana, Arial, Tahoma;
+}
+
+#options, #importBtn, #smrestorecrash{
+    cursor: pointer;
+}
+#options:hover, #importBtn:hover, #smrestorecrash:hover{
+     background-image: -webkit-gradient(linear,left top,left bottom,from(#eeeeee),to(#cccccc));
+     color: #333;     
+}
+
+#smrestorecrashon {
+    left:-5px;
+    min-width:20px;
+    max-width:20px;
+    padding: 2px 2px 2px 2px;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#00aa00),to(#55ff55));
+    color: #fff;
+}
+
+#smrestorecrashoff {
+    left:-5px;
+    min-width:20px;
+    max-width:20px;
+     padding: 2px 2px 2px 2px;
+     background-image: -webkit-gradient(linear,left top,left bottom,from(#aa0000),to(#ff5555));
+     color: #fff;
+}
+
+/* Restore session list */
+
+#smrestorelistwrapper {
+    position: relative;
+    margin: 4px;
+    height: 380px;
+    -webkit-border-radius: 3px;
+    border:1px solid #999999;
+
+    overflow: hidden;
+    background:#FFFFFF;
+}
+
+#smrestorelist, #smeditsession {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+.nosessionsaved {
+    color: black;
+    font: 14px Verdana, Arial, Tahoma, sans-serif;
+}
+
+.smsessionblock {
+    width:350px;
+    height:30px;
+    padding:2px;
+    cursor: pointer;
+    border-bottom:1px solid #DEDEDE;
+    position: relative;
+}
+.smsessionblock:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ddd));
+}
+.smsessionlabel {
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    width:350px;
+    height:18px;
+    font: 12px Verdana, Arial, Tahoma, sans-serif;
+    font-weight:bold;
+    color:#000000;
+    overflow:hidden;
+}
+.smsessiontitle {
+    float: left;
+    max-width: 200px;
+    max-height: 30px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.smsessioncount {
+    float: left;
+    font-size:10px;
+    color:#FF8800;
+    margin-left: 5px;
+}
+.smsessiontimelabel {
+    position:absolute;
+    left: 10px;
+    top: 18px;
+    width:100px;
+    height:15px;
+    font: 10px Verdana, Arial, Tahoma, sans-serif;
+    color:#9999CC;
+    overflow:hidden;
+}
+
+/* Edit session panel/list */
+
+#smeditsession {    
+    background: white;
+    font: 12px Verdana, Arial, Tahoma, sans-serif;
+    display: none;
+}
+#smeditsession h4 {
+    color: #005;
+    margin: 5px 5px 3px 5px;
+    background-color: activecaption;
+    height: 20px;
+}
+#smtitle {
+    width: 200px;
+    margin: 5px;
+}
+#smeditcontrols {
+    margin: 10px 5px 5px 5px;
+}
+.smeditlist {
+    margin: 5px;
+}
+.smeditlist .smtablabel {
+    /*width: 340px;*/
+    width:75%;
+    text-decoration: none;
+}
+.smeditlist .smtablabel[href]:hover {
+    color: #05f;
+}
+.smeditlist h4 {
+    margin: 0px 0px 5px 0px !important;
+}
+#smeditnewtoggle, #smeditsavedtoggle {
+    display: inline-block;
+    margin: 3px 2px -3px;
+    width: 16px;
+    height: 16px;
+    background: url(/img/contrast_high.png);
+}
+/* Confirm Box*/
+
+.confirmBox {
+    position: absolute;
+    top:25%;
+    left: 25%;
+    width: 200px;
+    height: 100px;
+    border: 1px solid #777;
+    -webkit-border-radius: 5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#bbb), to(#fff));
+    -webkit-box-shadow: 0px 0px 5px #aaa;
+    color: #333;
+
+}
+
+.messageBox {
+   padding: 10px;
+   height:50px;
+   font: bold 10px Verdana, Arial, Tahoma, sans-serif;
+}
+
+.confirmButton {
+    position: absolute;
+    width: 54px;
+    height: 14px;
+    padding: 3px;
+    top: 70px;
+    left: 30px;
+    border: 1px solid #777;
+    background: #eee;
+    font: 10px Verdana, Arial, Tahoma, sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
+
+.confirmButton:hover {
+    background: #ddd;
+}
+
+.cancelButton {
+    position: absolute;
+    width: 54px;
+    height: 14px;
+    padding: 3px;
+    top: 70px;
+    right: 30px;
+    border: 1px solid #777;
+    background: #eee;
+    font: 10px Verdana, Arial, Tahoma, sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cancelButton:hover {
+    background: #ddd;
+}
+/* exported session*/
+
+#sessionTextBox {
+    position: absolute;    
+    width: 90%;
+    left: 5%;
+    top: 20px;
+    display: none;
+    z-index: 100px;
+    background: #eee;
+    -webkit-box-shadow: 3px 3px 6px #777;
+}
+
+#SessionTextBoxTextArea {
+    width: 100%;
+    height: 170px;
+}
+
+#sessionTextBoxCloseBtn {
+    float: right;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    padding: 0px;
+    margin: 4px;
+    background-image: url(/img/cross.png);
+    background-repeat: no-repeat;
+    border: 1px solid rgba(255,255,255,0);
+}
+
+
+#sessionTextBoxCloseBtn:hover {
+    border: 1px solid #777;
+    background-color: white;
+    opacity: 1;
+}
+
+
+#importSessionBtn {
+    float: right;
+    cursor: pointer;
+    width: 120px;
+    height: 16px;
+    padding: 1px;
+    margin: 2px;
+    
+    border: 1px solid rgba(255,255,255,0);
+}
+
+#importSessionBtn:hover {
+    border: 1px solid #777;
+    background-color: white;
+    opacity: 1;
+}
+
+#importSessionBtnIcon {
+    float: left;
+    margin-left: 3px;
+}
+
+#importSessionBtnText {
+    float: left;
+    font: bold 10px Verdana, Arial, Tahoma, sans-serif;
+    height: 20px;
+    margin-left: 3px;
+    padding: 2px;
+}
+
+#sessionTextBoxTips {
+    padding: 4px;
+    height: 14px;
+    width: 100%;
+    font: bold 12px Verdana, Arial, Tahoma, sans-serif;
+}
+/* Other controls */
+
+.controls {
+    position:absolute;
+    width: 100px;
+    right: 35px;
+    top: 1px;
+    display: none;
+}
+.smsessionblock:hover .controls {
+    display: block;
+}
+.control {
+    float: right;
+    width: 16px;
+    height: 16px;
+    padding: 1px;
+    margin: 1px;
+    border: 1px solid #ddd;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+.control:hover {
+    border: 1px solid #777;
+    background-color: white;
+    opacity: 1;
+}
+.smsessionedit {
+    background-image: url(/img/comment_edit.png);
+}
+.smsessionremove {
+    background-image: url(/img/cross.png);
+}
+.smsessionexport {
+    background-image: url(/img/export.png);
+}
+.tooltip {
+    clear: both;
+    height: 12px;
+    font: 10px Verdana, Arial, Tahoma, sans-serif;
+    color: #333;
+    margin: 1px 0px 0px 3px;
+    text-align: right;
+}
+
+/* Other controls */
+
+.dimmed {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.dimmed:hover {
+    opacity: 1.0;
+}
+.dimmed[disabled="true"] {
+    opacity: 0.25;
+    cursor: default;
+}
+
+#alertIcon{
+    position: relative; top: 3px; left: -2px;
+}
+
+#smsavebaseDiv{
+    position:relative;
+    height:60px;
+}
+
+#savetitle{
+    width:80%;
+}
+
+#smrestorebaseDiv{
+    position:relative;height:80px;
+}
+
+#footnote{
+    position:absolute;height:20px;bottom:0px;padding-left:5px;
+}

@@ -1,0 +1,98 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>      
+    <link rel="stylesheet" rel="text/css" href="popup.css"/>
+    <script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="jquery-ui-1.9.2.custom.min.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+</head>
+<body>
+    <div id="mainDiv" style="border:0px;margin:0px;width:100%;height:480px;position:absolute;overflow:hidden;">
+        <div id="updateNotifier">
+            <img src="/img/alert_icon.png" id="alertIcon">
+            <span id="stringUpdatedMessage">FreshStart is updated, click here to see what's new</span>
+        </div>
+        <div id="smbase">
+            <div id="smsavebase">
+                <div id="smsavebaseDiv">
+                    <div id="smsaveicon"></div>
+                    <div id="smsavelabel"><span id="stringSaveSession">Save Session</span></div>
+                    <div id="smsavetitle">
+                        
+                        <input id="savetitle" value="My Session" maxlength="100">
+                    </div>
+                    <div id="smsavebutton" class="dimmed"></div>                
+                </div>            
+                <div id="smsavelistDiv" title="Uncheck tabs that you don't want to be saved.">
+                    <h4 id="smsaveToggleH4">
+                        <input id="smsavetoggle" type="checkbox" title="Toggle Selection" style="float:left;">
+                        <span class="smWinblabel" id="selectAll">Select All</span>
+                    </h4>
+                    <div id="smsavelist"></div>
+                </div>
+            </div>
+            <div id="smrestorebase">
+                <div id="smrestorebaseDiv">
+                    <div id="smrestoreicon"></div>
+                    <div id="smrestorelabel">Restore Session</div>
+                    <div id="smrestorelabel2">Click to open in new window, ctrl-click (Win, Linux) or cmd-click (Mac) to open in current window
+                    </div>
+                    <div id="smrestoretopbar">
+                        <div id="options" class="restoretopbarbtn">Options</div>
+                        <div id="importBtn"  class="restoretopbarbtn">Import</div>
+                        <div id="smrestorecrash"  class="restoretopbarbtn">Crash Recovery</div>
+                        <div id="smrestorecrashon"  class="restoretopbarbtn">On</div>
+                        <div id="smrestorecrashoff"  class="restoretopbarbtn">Off</div>
+                    </div>
+                </div>
+
+                <div id="smrestorelistwrapper">
+                    <div id="smrestorelist"></div>
+                    <div id="smeditsession">
+                        <h4>
+                            <span id="smheadingtitle">Title</span>
+                        </h4>
+                        <input id="smtitle" type="text" maxlength="100">
+
+                        <h4 class="smeditHead">
+                            <span id="smheadingnew" title="You can drag and drop tabs between windows">Tabs to Add</span><input id="smeditnewtoggle" type="checkbox" title="Toggle Selection" style="float:left;">
+                        </h4>
+                        <div id="smeditlist1" class="smeditlist">
+                        </div>
+
+                        <div id="smeditlist2" class="smeditlist">
+                            <h4>                                
+                                <span id="smheadingsaved">Saved Tabs (uncheck to remove)</span>
+                                <input id="smeditsavedtoggle" type="checkbox" title="Toggle Selection" style="float:left;" checked>
+                            </h4>                        
+                            <div id="smlistoriginal" class="smeditlist">                            
+                            </div>
+                        </div>
+
+                        <div id="smeditcontrols">
+                            <input id="smeditsave" type="button" value="Save">
+                            <input id="smeditcancel" type="button" value="Cancel">
+                            <input id="smeditremove" type="button" value="Remove">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="footnote">
+                    
+                </div>
+
+                <div id="sessionTextBox">
+                    <span id="sessionTextBoxCloseBtn"></span>
+                    <div id="sessionTextBoxTips"></div>
+                    <textArea id="sessionTextBoxTextArea"></textArea>
+                    <div id="sessionTextBoxBottomBar">
+                        <span id="importSessionBtn">
+                            <img id="importSessionBtnIcon" src="/img/import.png">
+                            <span id="importSessionBtnText">Import session</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+

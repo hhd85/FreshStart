@@ -1,0 +1,202 @@
+{
+    "cancel": {
+        "message": "Cancel"
+    },
+    "clickToRestore": {
+        "message": "Click para restaurar la sesión '$name$' en una nueva ventana",
+        "placeholders": {
+            "name": {
+                "content": "$1"
+            }
+        }
+    },
+    "confirm": {
+        "message": "Confirm"
+    },
+    "confirmClose": {
+        "message": "Open this session and close current window(s)? (Cannot undo!)"
+    },
+    "confirmDeleteQuestion": {
+        "message": "Are you sure to remove this sessions?"
+    },
+    "contactUs": {
+        "message": "Cont&aacute;ctanos:"
+    },
+    "crashRestoreTitle": {
+        "message": "Restaurar sesi&oacute;n anterior"
+    },
+    "description": {
+        "message": "¿Necesita gestionar sesiones de manera sencilla? ¿Varios usuarios en el mismo Chrome? FreshStart es un sencillo administrador de sesiones entre varios navegadores."
+    },
+    "edit": {
+        "message": "Edit"
+    },
+    "emptySession": {
+        "message": "No window is selected in this session"
+    },
+    "enableCrashRecovery": {
+        "message": "Habilitar recuperación por cerrado inesperado"
+    },
+    "enterSessionName": {
+        "message": "Please enter the name of the session"
+    },
+    "export": {
+        "message": "Export"
+    },
+    "exportedSessionCopyTips": {
+        "message": "Ctrl+c or Cmd+c to copy your session"
+    },
+    "importedSessionTips": {
+        "message": "Paste your session here"
+    },
+    "minutes": {
+        "message": "minutes.<br>Recommended: 5 minutes. Auto-saving too<br> frequently may slow down your machine."
+    },
+    "mySession": {
+        "message": "Mi Sesión"
+    },
+    "name": {
+        "message": "FreshStart - Administrador de sesiones entre varios navegadores"
+    },
+    "noSessionSaved": {
+        "message": "No hay sesiones guardadas"
+    },
+    "noSessionToRestore": {
+        "message": "There are no saved sessions."
+    },
+    "options": {
+        "message": "Opciones"
+    },
+    "optionsBackupPeriod": {
+        "message": "Guarda todas las pesta&ntilde;as cada "
+    },
+    "optionsBackupPeriodOutOfRange": {
+        "message": "El tiempo entre backups no puede ser más corto que 1 minuto o más largo que 999"
+    },
+    "optionsDateFormat": {
+        "message": "Date format:"
+    },
+    "optionsEnableCrashRecovery": {
+        "message": "Habilitar Recuperaci&oacute;n en caso de cierre incorrecto"
+    },
+    "optionsNewUserTips": {
+        "message": "&#191;Nuevo en FreshStart? &#161;Visita nuestra <a href='http://blog.visibotech.com/search/label/FreshStart' target='_blank'>Página de Bienvenida</a>!"
+    },
+    "optionsPageTitle": {
+        "message": "Opciones de FreshStart"
+    },
+    "optionsReorder": {
+        "message": "Move session to top after edit"
+    },
+    "optionsSaved": {
+        "message": "Opciones guardadas"
+    },
+    "popupSizeLabel": {
+        "message": "Popup Size"
+    },
+    "remove": {
+        "message": "Eliminar"
+    },
+    "restorePreviousSession": {
+        "message": "Restaurar sesión anterior"
+    },
+    "restoreSession": {
+        "message": "Restaurar sesi&oacute;n"
+    },
+    "restoreSession2": {
+        "message": "Click izquierdo para abrir en una nueva ventana o ctrl-click para desplegar en esta ventana"
+    },
+    "restoreSessionButton": {
+        "message": "Restore this window"
+    },
+    "restoreSessionButtonDescription": {
+        "message": "Click to restore this window"
+    },
+    "restoreSessionOn": {
+        "message": "Restore session on "
+    },
+    "save": {
+        "message": "Guardar"
+    },
+    "saveFail": {
+        "message": "Fail to save session. Please try again later"
+    },
+    "saveSession": {
+        "message": "Guardar sesi&oacute;n"
+    },
+    "saveSessionButton": {
+        "message": "Save as FreshStart session"
+    },
+    "saveSessionButtonDescription": {
+        "message": "Click here to save this as a new FreshStart session"
+    },
+    "savedWindow": {
+        "message": "Saved Window ($count$)",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "selectAll": {
+        "message": "Select All"
+    },
+    "sessionCreated": {
+        "message": "$name$ created",
+        "placeholders": {
+            "name": {
+                "content": "$1"
+            }
+        }
+    },
+    "sessionTextBoxClose": {
+        "message": "Close"
+    },
+    "sessionTextBoxImport": {
+        "message": "Import session"
+    },
+    "sizeWarning": {
+        "message": "* If the size is too small, it may distort the layout."
+    },
+    "smEditCancel": {
+        "message": "Cancel"
+    },
+    "smEditSave": {
+        "message": "Save"
+    },
+    "smHeadingNew": {
+        "message": "Tabs to Add (check to add)"
+    },
+    "smHeadingNewTitle": {
+        "message": "You can drag and drop tabs between windows"
+    },
+    "smHeadingSaved": {
+        "message": "Saved Tabs (uncheck to remove)"
+    },
+    "smHeadingTitle": {
+        "message": "Title"
+    },
+    "smSaveList": {
+        "message": "Desmarque las pestañas que no desea guardar."
+    },
+    "smSaveToggle": {
+        "message": "Toggle Selection"
+    },
+    "snapshotHint": {
+        "message": "* 'Snapshot #1' up to 'Snapshot #5' are sessions that are saved in an earlier Chrome use. You may find them helpful if the most recent session is corrupted or is not exactly what you want."
+    },
+    "supportUs": {
+        "message": "¡Apoya nuestra extensión y<br>compártela con tus amigos!"
+    },
+    "tabsCount": {
+        "message": " ($count$ pestañas)",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "updatedMessage": {
+        "message": "FreshStart ha sido actualizado, haga click aquí para saber las novedades"
+    }
+}
